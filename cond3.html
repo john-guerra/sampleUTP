@@ -11,7 +11,7 @@
   <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sed, itaque culpa sapiente beatae aliquam numquam nemo? Voluptate nostrum, mollitia molestias distinctio deleniti delectus optio illo saepe blanditiis ex. Voluptatem?</div>
 
 
-  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="//d3js.org/d3.v4.min.js"></script>
 
 
 
@@ -68,13 +68,6 @@ function update(myData) {
 }
 
 
-
-
-console.log("primero");
-
-
-d3.csv("./slice.csv", callback);
-
 function callback(err, data) {
   if (err) throw err;
   console.log("segundo");
@@ -89,7 +82,15 @@ function callback(err, data) {
 
 }
 
+
+
+
+console.log("primero");
+d3.csv("./slice.csv", callback);
 console.log("tercero");
+
+
+
 
 
 
